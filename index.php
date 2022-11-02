@@ -8,7 +8,12 @@
 
 
 	<body>
-		<h1>hello world</h1>
+		<nav>
+			<a href="test"><img src="icons/logo.png" alt="logo" height="30" width="30"></img></a>
+			<div class='links'>
+				<a href="login.php"><img src='icons/login_icon.png' alt='login' height="30" width="30"></a>
+			</div>
+		</nav>
 	</body>
 
 </html>
