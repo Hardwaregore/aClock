@@ -11,5 +11,6 @@ CREATE TABLE `reminders` (
     `username` VARCHAR(50) NOT NULL,
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `title` VARCHAR(50) NOT NULL,
-    `contents` VARCHAR(1000)
+    `contents` VARCHAR(1000),
+    `due_at` VARCHAR(69),
 );

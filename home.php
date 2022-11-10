@@ -12,7 +12,7 @@
 		<nav>
 			<a href="home.php"><img src="icons/logo.png" alt="logo" height="50" width="50"></img></a>
 			<div class='links'>
-				<button onclick="confLogout()"><img src='icons/logout_icon.png' alt='logout' height="50" width="50"></button>
+				<a onclick="confLogout()"><img src='icons/logout_icon.png' alt='logout' height="50" width="50"></a>
 			</div>
 		</nav>
 	</body>

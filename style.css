@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Audiowide', sans-serif;
+  background-color: #131316;
+  color: #ffffff;
+  padding: 0;
 }
 
 * {
@@ -78,4 +83,38 @@ footer .heart {
 /* highlights links on hover */
 a:hover {
     color: #c1c7c3;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
+.ac:nth-child(1){
+  transition-delay: 200ms;
+}
+.ac:nth-child(2){
+  transition-delay: 400ms;
+}
+.ac:nth-child(3){
+  transition-delay: 600ms;
 }
