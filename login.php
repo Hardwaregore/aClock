@@ -100,6 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
     </style>
+    <link rel="shortcut icon" href="icons/login_icon.png" type="image/x-icon"></link>
 </head>
 <body>
     <div class="wrapper">
