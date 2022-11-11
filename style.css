@@ -118,3 +118,7 @@ section {
 .ac:nth-child(3){
   transition-delay: 600ms;
 }
+
+.isBlack {
+  color: #131316
+}
