@@ -122,3 +122,35 @@ section {
 .isBlack {
   color: #131316
 }
+
+.wrapper{ width: 360px; padding: 20px; }
+.alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}
+.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}
+.invalid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:#dc3545}
+
+.login {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  padding: 70px 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .pill {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
