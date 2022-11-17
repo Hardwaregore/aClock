@@ -18,6 +18,9 @@
 			</div>
 		</nav>
 
+		<a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
+
+
 	</body>
 
 </html>

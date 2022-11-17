@@ -154,3 +154,10 @@ section {
     cursor: pointer;
     border-radius: 16px;
   }
+
+  .golden-ratio-1 {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 20px;
+    line-height: 5em;
+  }
