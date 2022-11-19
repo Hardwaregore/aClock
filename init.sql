@@ -7,10 +7,10 @@ CREATE TABLE `users` (
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE TABLE `reminders` (
-    `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
     `username` VARCHAR(50) NOT NULL,
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-    `title` VARCHAR(50) NOT NULL,
-    `contents` VARCHAR(1000),
-    `due_at` VARCHAR(69),
+    `name` VARCHAR(50) NOT NULL,
+    `time-start` VARCHAR(1000),
+    `time-end` VARCHAR(69)
 );
