@@ -12,5 +12,6 @@ CREATE TABLE `reminders` (
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `name` VARCHAR(50) NOT NULL,
     `time-start` VARCHAR(1000),
-    `time-end` VARCHAR(69)
+    `time-end` VARCHAR(69),
+    `comments` VARCHAR(999)
 );

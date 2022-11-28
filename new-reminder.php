@@ -17,6 +17,14 @@
     <div class="login">		
         <form action="create-reminder-backend.php" method="post">
         <h2>Create a new reminder</h2>
+        <div class="alert alert-danger">
+        <?php
+if(isset($_GET['err'])){
+    $err = $_GET['err'];
+    echo "$err<br>";
+}
+?>
+        </div>
         <label>Name:</label>
         <input type="Text" placeholder="Name" name='name'></input>
         <br>
@@ -27,6 +35,7 @@
         <input type='datetime-local' name='time-end'></input>
         <br>
         <a onclick="this.closest('form').submit();"><img src="icons/save_icon.png" width="50" height="50"></img></a>
+
     </form>
 </div>
 </body>

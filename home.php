@@ -19,6 +19,18 @@
 		</nav>
 
 		<a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
+		<?php
+			require_once "connect.php";
+
+			$username = $_SESSION['username'];
+			$sql = "SELECT `name`, `time-start`, `time-end` FROM `reminders` WHERE username = $username;";
+			while($row = mysqli_fetch_assoc(mysqli_query($conn, $sql))){
+				echo $row['name'];
+			}
+
+
+		?>
+		
 
 
 	</body>
