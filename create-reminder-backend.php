@@ -7,7 +7,7 @@ $username = $_SESSION['username'];
     if(empty(trim($_POST["name"]))){
         $err = "Please set a name";
 
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["name"]))){
+    } elseif(!preg_match('/^[a-zA-Z0-9_ ]+$/', trim($_POST["name"]))){
         $err = "Plz no squeal injection.....";
     } else{
         $name = trim($_POST["name"]);

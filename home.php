@@ -17,6 +17,7 @@
 				<a onclick="confLogout()"><img src='icons/logout_icon.png' alt='logout' height="50" width="50"></a>
 			</div>
 		</nav>
+		<div class='login'>
 
 		
 		<?php
@@ -37,6 +38,7 @@
 		?>
 
 <a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
+		</div>
 		
 
 
