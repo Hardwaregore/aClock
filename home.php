@@ -18,25 +18,25 @@
 			</div>
 		</nav>
 
-		<a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
+		
 		<?php
 			require_once "connect.php";
 			session_start();
 
 			$username = $_SESSION['username'];
-			$sql = "SELECT `name`, `time-start`, `time-end` FROM `reminders` WHERE username = '$username';";
+			$sql = "SELECT `name`, `time-start`, `time-end`, `comments` FROM `reminders` WHERE username = '$username' AND completed = '0';";
 
-			while ($row = mysqli_fetch_array(mysqli_query($conn, $sql))){
+			$result = mysqli_query($conn, $sql);
 
-
-			
-				echo $row["name"];
+			while($row = mysqli_fetch_assoc($result)) {
+				// var_dump($row);
+				$rem = $row['name'];
+				echo "<div class='reminder'>" . $row['name'] . "<br>" . $row['time-start'] . " - " . $row['time-end'] . "<br>" . $row['comments'] . "<br><a href='del.php?rem=$rem'><img src='icons/delete_icon.png' width='20' height='20'></a><a href='completed.php?rem=$rem'><img src='icons/completed.png' width='20' height='20'></a>" . "</div>" . "<br>";
 			}
-				//echo $row["time-start"];
-
-
 
 		?>
+
+<a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
 		
 
 

@@ -31,21 +31,21 @@
 
 		<section class='hidden'>
 			<img src="icons/logo.png" height="100" width="100"></img>
-			<h1>Your New Best Friend</h1>
-			<h5>For Time Management</h5>
+			<h1>Just a clock</h1>
+			<h5>Made by a person somewhere doing something.....</h5>
 			
 
 
 		</section>
 		<section class='hidden'>
-			<h3>Its as easy as</h3>
+			<h1>Its as easy as</h1>
 			<div class='ab'>
 				<div class='ac hidden'>
-				<h4>1</h4>
+				<h4>1. Click +</h4>
 				</div><br><div class='ac hidden'>
-				<h4>2</h4>
+				<h4>2. Add information</h4>
 				</div><br><div class='ac hidden'>
-				<h4>3</h4>
+				<h4>3. Click Save</h4>
 				</div>
 			</div>
 			

@@ -21,13 +21,19 @@ $username = $_SESSION['username'];
 
     }
 
-    if(!empty(trim($_POST["time-start"]))){
+    if(!empty(trim($_POST["time-end"]))){
         $end = trim($_POST["time-end"]);
 
     } 
+    if(!empty(trim($_POST["comments"]))){
+        $comments = trim($_POST["comments"]);
+
+    } 
+
+
     if (!isset($err)) {
 
-        $sql = "INSERT INTO `reminders` (`username`, `name`, `time-start`, `time-end`) VALUES ('$username', '$name', '$start', '$end');";
+        $sql = "INSERT INTO `reminders` (`username`, `name`, `time-start`, `time-end`, `comments`) VALUES ('$username', '$name', '$start', '$end', '$comments');";
 
 
     if(mysqli_query($conn, $sql)){

@@ -17,14 +17,14 @@
     <div class="login">		
         <form action="create-reminder-backend.php" method="post">
         <h2>Create a new reminder</h2>
-        <div class="alert alert-danger">
+  
         <?php
 if(isset($_GET['err'])){
     $err = $_GET['err'];
-    echo "$err<br>";
+    echo "<div class='alert alert-danger'>$err</div><br>";
 }
 ?>
-        </div>
+
         <label>Name:</label>
         <input type="Text" placeholder="Name" name='name'></input>
         <br>
@@ -34,7 +34,13 @@ if(isset($_GET['err'])){
         <label>End Time:</label>
         <input type='datetime-local' name='time-end'></input>
         <br>
+        <lable>Comments:</lable>
+
+        <span class="resizable-input"><input type="text" name='comments' /><span></span></span>
+        <br>
+
         <a onclick="this.closest('form').submit();"><img src="icons/save_icon.png" width="50" height="50"></img></a>
+
 
     </form>
 </div>
