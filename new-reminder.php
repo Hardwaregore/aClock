@@ -1,5 +1,11 @@
-
-
+<?php
+		   session_start();
+		   if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                $useless = 'useless';
+		} else {
+            header('Location: home.php');
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,11 @@
+<?php
+		   session_start();
+		   if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                $useless = 'useless';
+		} else {
+            header('Location: home.php');
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,8 @@
     <?php
     
         			require_once "connect.php";
-                    session_start();
+                    
+        
         
                     $username = $_SESSION['username'];
                     $sql = "SELECT `name`, `time-start`, `time-end`, `comments` FROM `reminders` WHERE username = '$username' AND completed = '1';";
