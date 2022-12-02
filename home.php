@@ -37,7 +37,8 @@
 
 		?>
 
-<a href="new-reminder.php"><img src='icons/add.png' width="100" height="100"></img></a>
+<a href="new-reminder.php"><img src='icons/add.png' width="60" height="60"></img></a>
+<a href="completed-rem.php"><h5>Completed reminders</h5></a>
 		</div>
 		
 
